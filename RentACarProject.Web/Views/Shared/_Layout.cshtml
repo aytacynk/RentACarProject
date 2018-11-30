@@ -27,12 +27,12 @@
 
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="~/Home/Index">Home</a></li>
-                        <li><a href="~/Home/AboutUs">About Us</a></li>
-                        <li><a href="~/Home/Services">Services</a></li>
-                        <li><a href="~/Home/Portfolio">Portfolio</a></li>
-                        <li><a href="~/Home/Blog">Blog</a></li>
-                        <li><a href="~/Home/Contact">Contact</a></li>
+                        <li id="homeLink"><a id="homeLinka" href="~/Home/Index">Home</a></li>
+                        <li id="aboutLink"><a id="aboutLinka" href="~/Home/AboutUs">About Us</a></li>
+                        <li id="servicesLink"><a href="~/Home/Services">Services</a></li>
+                        <li id="portfolioLink"><a href="~/Home/Portfolio">Portfolio</a></li>
+                        <li id="blogLink"><a href="~/Home/Blog">Blog</a></li>
+                        <li id="contactLink"><a href="~/Home/Contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -142,9 +142,9 @@
                 <div class="col-sm-6">
                     <ul class="pull-right">
                         @*<li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact Us</a></li>*@
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Contact Us</a></li>*@
                         <li><a href="~/Home/AboutUs">About Us</a></li>
                         <li><a href="~/Home/Services">Services</a></li>
                         <li><a href="~/Home/Portfolio">Portfolio</a></li>
@@ -163,5 +163,12 @@
     <script src="~/js/jquery.isotope.min.js"></script>
     <script src="~/js/wow.min.js"></script>
     <script src="~/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            var path = window.location.pathname.split("~");
+            //console.log(path);
+            $('nav a[href^="' + path + '"]').parent().addClass("active");
+        });
+    </script>
 </body>
 </html>
