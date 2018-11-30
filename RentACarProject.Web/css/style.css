@@ -184,8 +184,8 @@ body > section {
   background-color: #fff;
 }
 
-.navbar>.container .navbar-brand{
-  margin-left: 0;
+.navbar > .container .navbar-brand {
+    margin-left: 0;
 }
 
 .top-bar {
