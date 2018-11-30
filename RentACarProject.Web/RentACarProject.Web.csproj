@@ -137,6 +137,7 @@
     <Content Include="images\gallery\gallery5.jpg" />
     <Content Include="images\gallery\gallery6.jpg" />
     <Content Include="images\image_bg.png" />
+    <Content Include="images\logo.png" />
     <Content Include="images\man1.jpg" />
     <Content Include="images\man2.jpg" />
     <Content Include="images\man3.jpg" />
@@ -217,7 +218,10 @@
     <Content Include="images\service\client2.png" />
     <Content Include="images\service\client3.png" />
     <Content Include="images\service\image_bg.png" />
+    <Content Include="images\slideer_two.jpg" />
+    <Content Include="images\sliderone.png" />
     <Content Include="images\slider_one.jpg" />
+    <Content Include="images\slider_three.png" />
     <Content Include="images\tab1.png" />
     <Content Include="images\tab2.png" />
     <Content Include="images\team-member.jpg" />
