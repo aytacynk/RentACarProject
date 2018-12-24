@@ -27,7 +27,7 @@
 
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="~/Home/Index">Anasayfa</a></li>
+                        <li><a href="~/Home/Index">Anasayfa</a></li>
                         <li><a href="~/Home/AboutUs">Kurumsal</a></li>
                         <li><a href="~/Home/Services">Hizmetlerimiz</a></li>
                         <li><a href="~/Home/Portfolio">Araç Filomuz</a></li>
@@ -141,9 +141,9 @@
                 <div class="col-sm-6">
                     <ul class="pull-right">
                         @*<li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact Us</a></li>*@
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Contact Us</a></li>*@
                         <li><a href="~/Home/AboutUs">About Us</a></li>
                         <li><a href="~/Home/Services">Services</a></li>
                         <li><a href="~/Home/Portfolio">Portfolio</a></li>
@@ -162,7 +162,15 @@
     <script src="~/js/jquery.isotope.min.js"></script>
     <script src="~/js/wow.min.js"></script>
     <script src="~/js/main.js"></script>
-    <!--/#buraya ZENDESK scrip dosyası gelcek-->
+    <script>
+        $(document).ready(function () {
+            var path = window.location.pathname.split("~");
+            //console.log(path);
+            $('nav a[href^="' + path + '"]').parent().addClass("active");
+        });
+    </script>
+
+    <!--/#buraya ZENDESK script dosyası gelecek-->
 
 </body>
 </html>
