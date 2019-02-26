@@ -48,9 +48,9 @@ namespace RentACarProject.Web.Controllers
         {
             if (name != "" && email != "" && phone != "" && message != "")
             {
-                bool sonuc = false;
-                sonuc = SendEmail("kerem.salan@zeylanofis.com", "YENİ BİR MESAJINIZ VAR!", "<p> <h4>Merhaba;</h4><h5>Mesajınızın içeriği aşağıdaki gibidir.</h5><b>AD SOYAD :</b> " + name + "<br /> <b>EMAİL :</b> " + email + "<br /> <b>TELEFON :</b> " + phone + "<br /> <b>MESAJ :</b> " + message);
-                return View("Index");
+                bool sonuc = SendEmail("aytacyanik@hotmail.com.tr", "YENİ BİR MESAJINIZ VAR!", "<p> <h4>Merhaba;</h4><h5>Mesajınızın içeriği aşağıdaki gibidir.</h5><b>AD SOYAD :</b> " + name + "<br /> <b>EMAİL :</b> " + email + "<br /> <b>TELEFON :</b> " + phone + "<br /> <b>MESAJ :</b> " + message);
+                if (sonuc)
+                    return RedirectToAction("Contact", "Home");
             }
             return View();
         }
@@ -63,7 +63,7 @@ namespace RentACarProject.Web.Controllers
 
                 string senderPassword = System.Configuration.ConfigurationManager.AppSettings["SenderPassword"].ToString();
 
-                SmtpClient client = new SmtpClient("smtpout.europe.secureserver.net", 80);
+                SmtpClient client = new SmtpClient("smtp-mail.outlook.com", 587);
                 client.EnableSsl = true;
                 client.Timeout = 100000;
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;
