@@ -1862,6 +1862,7 @@ ul.sidebar-gallery {
 
 
 
+/* Ara Button yazý tipi Class*/
 
 .bottomside {
     position: fixed;
@@ -1928,7 +1929,6 @@ ul.sidebar-gallery {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-/* Ara Button yazý tipi Class*/
 
 @media screen and (max-width: 374px) {
     .dc_nmr {
