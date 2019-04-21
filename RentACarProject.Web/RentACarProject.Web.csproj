@@ -136,6 +136,7 @@
     <Content Include="images\gallery\gallery4.jpg" />
     <Content Include="images\gallery\gallery5.jpg" />
     <Content Include="images\gallery\gallery6.jpg" />
+    <Content Include="images\gallery\KURUMSAL.jpg" />
     <Content Include="images\image_bg.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\man1.jpg" />
@@ -265,7 +266,9 @@
     <Content Include="js\Message.js" />
     <Content Include="js\respond.min.js" />
     <Content Include="js\wow.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -296,6 +299,7 @@
     <Content Include="Views\Home\Portfolio.cshtml" />
     <Content Include="Views\Home\Blog.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

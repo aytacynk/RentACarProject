@@ -48,7 +48,7 @@ namespace RentACarProject.Web.Controllers
         {
             if (name != "" && email != "" && phone != "" && message != "")
             {
-                bool sonuc = SendEmail("aytacyanik@hotmail.com.tr", "YENİ BİR MESAJINIZ VAR!", "<p> <h4>Merhaba;</h4><h5>Mesajınızın içeriği aşağıdaki gibidir.</h5><b>AD SOYAD :</b> " + name + "<br /> <b>EMAİL :</b> " + email + "<br /> <b>TELEFON :</b> " + phone + "<br /> <b>MESAJ :</b> " + message);
+                bool sonuc = SendEmail("esatkuscu@hotmail.com", "YENİ BİR MESAJINIZ VAR!", "<p> <h4>Merhaba;</h4><h5>Mesajınızın içeriği aşağıdaki gibidir.</h5><b>AD SOYAD :</b> " + name + "<br /> <b>EMAİL :</b> " + email + "<br /> <b>TELEFON :</b> " + phone + "<br /> <b>MESAJ :</b> " + message);
                 if (sonuc)
                     return RedirectToAction("Contact", "Home");
             }
