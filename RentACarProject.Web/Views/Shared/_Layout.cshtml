@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rent A Car </title>
+    <title>BARAJYOLU ARAÇ KİRALAMA</title>
     <link href="~/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    @*<link href="~/css/font-awesome.min.css" rel="stylesheet" />*@
     <link href="~/css/animate.min.css" rel="stylesheet" />
     <link href="~/css/prettyPhoto.css" rel="stylesheet" />
     <link href="~/css/style.css" rel="stylesheet" />
     <link href="~/css/responsive.css" rel="stylesheet" />
-
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
 </head>
 <body class="homepage">
     <header id="header">
@@ -42,17 +42,27 @@
 
     </header>
     <!--/header-->
+
+    <div class="carGallerry col-xs-2">
+        <a class="phone_link waves-effect hvr-icon-pulse" href="~/Home/Portfolio" title="Araç Filomuz">
+            <div class="dc_oth">
+                <div class="dc_txt"><span><span class="fa fa-car hvr-icon" style="float:left;"> &nbsp </span> ARAÇ FİLOMUZ</span> </div>
+            </div>
+        </a>
+    </div>
+
     <!-- Hemen Ara Calling -->
     <div class="bottomside col-xs-2">
-        <a class="phone_link waves-effect hvr-icon-pulse" href="tel:08508119956" title="Hemen Ara">
+        <a class="phone_link waves-effect hvr-icon-pulse" href="tel:03222260102" title="Hemen Ara">
             <div class="dc_oth">
                 <div class="dc_txt"><span>HEMEN ARA</span> </div>
                 <div class="dc_nmr">
-                    &nbsp;<span class="fa fa-phone hvr-icon"></span> 0850 811 99 56
+                    &nbsp;<span class="fa fa-phone hvr-icon"></span> 0322 226 01 02
                 </div>
             </div>
         </a>
     </div>
+
     <!-- End off Hemen Ara Calling -->
     @RenderBody()
 
